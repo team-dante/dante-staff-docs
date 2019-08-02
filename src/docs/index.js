@@ -9,8 +9,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './prism.css';
 import './index.css';
 
-const title = 'Component Template';
-const gh = 'reactstrap/component-template';
+const title = 'Dante Patient';
+const gh = 'team-dante/Dante-Staff-Swift';
 // if using a root url, remove the basename value here and in BrowserRouter
 const basename = process.env.REACT_APP_GH_PAGES_PATH ?
   `/${process.env.REACT_APP_GH_PAGES_PATH}` : '';
