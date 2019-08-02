@@ -114,3 +114,4 @@ Feel free to create an [issue](https://github.com/reactstrap/component-template/
 
 Component Licensed under [BSD-3-CLAUSE](LICENSE)
 Component Template Licensed Under [MIT](LICENSE-component-template) from [reactstrap/component-template](https://github.com/reactstrap/component-template)
+# dante-patient-docs
