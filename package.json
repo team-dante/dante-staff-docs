@@ -26,6 +26,7 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-0": "^6.5.0",
     "bootstrap": "^4.0.0-alpha.6",
+    "braces": "^3.0.2",
     "conventional-changelog-cli": "^1.1.1",
     "conventional-recommended-bump": "^0.3.0",
     "dentist": "^1.0.3",
@@ -34,6 +35,8 @@
     "history": "^4.2.0",
     "lodash": "^4.17.15",
     "lodash.merge": "^4.6.2",
+    "lodash.template": "^4.5.0",
+    "mime": "^2.4.4",
     "open": "^6.4.0",
     "react": "^15.3.2",
     "react-addons-css-transition-group": "^15.3.2",
@@ -44,7 +47,8 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.0.0",
     "react-scripts": "0.8.5",
-    "reactstrap": "^4.0.1"
+    "reactstrap": "^4.0.1",
+    "webpack-dev-server": "^3.7.2"
   },
   "peerDependencies": {
     "reactstrap": "^4.0.0"
@@ -65,8 +69,5 @@
     "reactstrap-component",
     "bootstrap"
   ],
-  "dependencies": {
-    "lodash.template": "^4.5.0",
-    "mime": "^2.4.4"
-  }
+  "dependencies": {}
 }
