@@ -11,7 +11,6 @@ import {
 import { AppScreenshots } from '../components';
 import {Logo} from './assets';
 
-
 const Home = ({title, gh}) => {
   return (
     <div>
@@ -91,7 +90,5 @@ const Home = ({title, gh}) => {
     </div>
   );
 }
-
-
 
 export default Home;

@@ -8,7 +8,6 @@ import {SignIn, Graph, OncMap, Profile, Table, TimeTracker} from '../docs/assets
 
 class AppScreenshots extends Component {
   render() {
-
     return (
         <Container fluid>
           <Row>
