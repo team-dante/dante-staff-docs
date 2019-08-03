@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import LayoutFooter from './layout/Footer';
 import Home from './Home';
 import Documentation from './Documentation';
+import ScrollToTop from './ScrollToTop';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './prism.css';
@@ -17,15 +18,17 @@ const basename = process.env.REACT_APP_GH_PAGES_PATH ?
 const Docs = () => {
   return (
     <BrowserRouter basename={basename}>
-      <div className="App">
-        {/* Begin Routes */}
-        <Switch>
-            <Route exact path="/" render={() => <Home title={title} gh={gh} />} />
-            <Route path="/documentation" component={Documentation} />
-        </Switch>
-        {/* End Routes */}
-        <LayoutFooter gh={gh} />
-      </div>
+      <ScrollToTop>
+        <div className="App">
+          {/* Begin Routes */}
+          <Switch>
+              <Route exact path="/" render={() => <Home title={title} gh={gh} />} />
+              <Route path="/documentation" component={Documentation} />
+          </Switch>
+          {/* End Routes */}
+          <LayoutFooter gh={gh} />
+        </div>
+      </ScrollToTop>
     </BrowserRouter>
   );
 };
