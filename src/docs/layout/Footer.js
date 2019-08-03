@@ -12,6 +12,7 @@ const Footer = ({gh}) => {
               <iframe src={`https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=star&count=true`} frameBorder="0" scrolling="0" width="100" height="20px" />
               <iframe src={`https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=fork&count=true`} frameBorder="0" scrolling="0" width="100" height="20px" />
             </p>
+            <p><small>Acknowledgement: <a href="https://github.com/reactstrap/component-template">Component Template</a></small></p>
           </Col>
         </Row>
       </Container>
