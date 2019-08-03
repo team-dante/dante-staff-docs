@@ -1,13 +1,13 @@
 import React from 'react';
 import LayoutContent from './layout/Content';
 
-import HelloWorldDocs from './components/HelloWorldDocs';
+import DantePatientDocs from './components/DantePatientDocs';
 
 const Documentation = () => {
   return (
     <div>
       <LayoutContent>
-        <HelloWorldDocs />
+        <DantePatientDocs />
       </LayoutContent>
     </div>
   );

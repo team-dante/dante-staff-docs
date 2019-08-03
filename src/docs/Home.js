@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { PrismCode } from 'react-prism';
-import { dedent } from 'dentist';
 import {
   Jumbotron,
   Button,
@@ -9,20 +8,9 @@ import {
   Col,
   Row
 } from 'reactstrap';
-import { HelloWorld } from '../components';
+import { AppScreenshots } from '../components';
+import {Logo} from './assets';
 
-const example = dedent(`
-  import React from 'react';
-  import { HelloWorld } from 'component-template';
-
-  const Example = () => {
-    return (
-      <HelloWorld name="World" />
-    );
-  };
-
-  export default Example;
-`);
 
 const Home = ({title, gh}) => {
   return (
@@ -31,13 +19,16 @@ const Home = ({title, gh}) => {
         <Container fluid>
           <Row>
             <Col sm={{ size: 10, offset: 1}}>
+              <p className="lead">
+                <img id="logo" src={Logo} alt="logo" />
+              </p>
               <h1 className="display-4">{title}</h1>
               <p className="lead my-3">
-                An example reactstrap component built, documented & published with <a href="https://github.com/reactstrap/component-template">Component Template</a>
+                  An iOS mobile application designated to enpower the patients
               </p>
               <p>
-                <Button outline color="danger" href={`https://github.com/${gh}`}>View on Github</Button>
-                <Button tag={Link} color="danger" to="/documentation">Documentation</Button>
+                <Button outline color="info" href={`https://github.com/${gh}`}>View on Github</Button>
+                <Button tag={Link} color="info" to="/documentation">Documentation</Button>
               </p>
             </Col>
           </Row>
@@ -48,30 +39,59 @@ const Home = ({title, gh}) => {
           <Col sm={{ size: 8, offset: 2 }}>
             <h2>Getting Started</h2>
             <hr/>
+            <h5><strong>For technical users:</strong></h5>
             <p>
-              Install and save the component to your project
+              Install/Clone the project to your local directory
             </p>
             <pre>
               <PrismCode className="language-bash">
-                npm install component-template --save
+                git clone https://github.com/team-dante/Dante-Patient-Swift.git
               </PrismCode>
             </pre>
-            <p>
-              ES6 - import the component you need
-            </p>
-            <div className="docs-example">
-              <HelloWorld name="World" />
+            <p>Navigate inside the project directory: <code>cd Dante-Patient-Swift</code> </p>
+            <p>Then, open <code>Dante Patient.xcworkspace</code>; hit play at the top-left corner of Xcode</p>
+            <br/>
+            <h5><strong>For non-technical users:</strong></h5>
+            <p>If you would like to get a beta version of Dante Patient app:</p>
+            <ol>
+              <li>Install <strong>TestFlight</strong> from Apple Store</li>
+              <li>Ask our development team to give you the <strong>Redeem Code</strong> to install the app</li>
+            </ol>
+            <br/>
+            <h5><strong>A few notes before using the app:</strong></h5>
+            <ol>
+              <li>Please make sure your iOS version >= <code>12.2</code> (we highly recommend you to update to the lastest 
+                version of iOS)</li>
+              <li>Turn on <code>Bluetooth</code> in Settings.</li>
+              <li>There will be an alert asking about the previlege of accessing your location the first 
+                you open the app. Please select <code>Always Allow</code> as this app is highly dependent on location services.
+              </li>
+              <li>Please refer to our <Link to="/documentation">documentation</Link> page for any confusions you may have.</li>
+            </ol>
+            <div style={{marginTop: 50}}>
+              <h2>App Screenshots</h2>
+              <hr/>
+              <div className="docs-example">
+                <AppScreenshots />
+              </div>
             </div>
-            <pre>
-              <PrismCode className="language-jsx">
-                {example}
-              </PrismCode>
-            </pre>
+            <div style={{marginTop: 50}}>
+              <h4>Future Developments</h4>
+              <hr/>
+              <ul>
+                <li>Continue to fine-tune the <strong>Graph</strong> section</li>
+                <li>Integrate indoor GPS feature to guide patients to the designated treatment room</li>
+                <li>3D image rendering to illustrate patient’s treatment progress</li>
+                <li>Android version of Dante Patient</li>
+              </ul>
+            </div>
           </Col>
         </Row>
       </Container>
     </div>
   );
 }
+
+
 
 export default Home;

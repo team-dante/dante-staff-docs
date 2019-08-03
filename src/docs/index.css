@@ -94,12 +94,12 @@ h1,h2,h3 {
 
 .docs-example {
   position: relative;
-  padding: 3em 1em 1em;
+  padding: 2em 0.8em 0.8em;
   border: 1px solid #d8d8d8;
   margin: 1.5rem 0 0;
 }
 
-.docs-example::before {
+/* .docs-example::before {
   position: absolute;
   left: 0;
   top: 0;
@@ -108,7 +108,7 @@ h1,h2,h3 {
   font-size: smaller;
   font-weight: 500;
   content: 'EXAMPLE';
-}
+} */
 
 .docs-example::after {
   clear: both;
@@ -240,4 +240,8 @@ pre[class*="language-"] {
 	padding: .1em;
 	border-radius: .3em;
 	white-space: normal;
+}
+
+#logo {
+    border-radius: 20px;
 }
