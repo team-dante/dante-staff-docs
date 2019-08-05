@@ -16,10 +16,10 @@ class Section extends Component {
     if (toRight) {
       return (
         <Row>
-          <Col xs="12" md="9" style={{color: '#3d3d3d'}}>
+          <Col xs="12" md="8" style={{color: '#3d3d3d'}}>
             {this.props.children}
           </Col>
-          <Col xs="12" md="3">
+          <Col xs="12" md="4">
             <img src={this.props.imgSrc} alt="App snapshots" width="200px"/>
           </Col>
         </Row>
@@ -27,10 +27,10 @@ class Section extends Component {
     } else {
       return (
         <Row>
-          <Col xs="12" md="3">
+          <Col xs="12" md="4">
             <img src={this.props.imgSrc} alt="App snapshots" width="200px"/>
           </Col>
-          <Col xs="12" md="9" style={{color: '#3d3d3d'}}>
+          <Col xs="12" md="8" style={{color: '#3d3d3d'}}>
             {this.props.children}
           </Col>
         </Row>
