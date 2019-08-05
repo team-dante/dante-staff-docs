@@ -88,10 +88,15 @@ examples.push({
     <Section imgSrc={Graph}>
       <p>By tapping <code>Graph</code> at the header, patients can see the collected time tracking data 
       in graphic forms. There is a <code>filter button</code> at the <strong>top-right</strong> corner in 
-      which patients can decide to view time tracking data in <code>days, months, or years</code>. As of 
-      now, our development team would use <code>pie chart</code> for day-to-day basis as it gives an idea 
-      of the proportion of the overall time that a patient spends at a particular room. In future, we may 
-      use <code>line graphs</code> for time tracking data over months and/or years.</p>
+      which patients can decide to view time tracking data in <code>days, months, or years</code>. Our development team would use <code>pie chart</code> for day-to-day basis as it gives an idea 
+      of the proportion of the overall time that a patient spends at a particular room. Also, we decide to 
+      use <code>bar graphs</code> for time tracking data over months and/or years as it can present a big picture
+      for patients the average time taken (in minutes) per room in a month span or year span.</p>
+
+      <p>Notice we add an animated loading screen when the patient is about to re-enter the graph screen again as the 
+        graph takes a few seconds to load. We also display our own legend in a table to accompany with the graph so that
+        the presented data is more comprehensive.
+      </p>
     </Section>
   )
 });

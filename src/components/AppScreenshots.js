@@ -4,7 +4,7 @@ import {
   Col,
   Row
 } from 'reactstrap';
-import {SignIn, Graph, OncMap, Profile, Table, TimeTracker} from '../docs/assets';
+import {SignIn, GraphStatic, OncMap, Profile, Table, TimeTracker} from '../docs/assets';
 
 class AppScreenshots extends Component {
   render() {
@@ -27,7 +27,7 @@ class AppScreenshots extends Component {
               <img src={Table} alt="Stats Table" width="240px"/>
             </Col>
             <Col xs="12" md="4">
-              <img src={Graph} alt="Stats Graph" width="240px"/>
+              <img src={GraphStatic} alt="Stats Graph" width="240px"/>
             </Col>
             <Col xs="12" md="4">
               <img src={Profile} alt="Patient Profile" width="240px"/>
