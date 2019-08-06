@@ -1,12 +1,12 @@
-import Graph from './dantePatientGraph.gif';
-import GraphStatic from './graph.PNG';
+import CreateAcct from './createAcct.PNG';
+import PatientStats from './patientStats.PNG';
 import Logo from './logo.png';
-import OncMap from './oncMap.jpg';
-import Profile from './profile.PNG';
-import Table from './table.PNG';
-import TimeTracker from './timeTracker.PNG';
-import SignIn from './signin.PNG';
+import OncMap from './oncMap.PNG';
+import MainMenu from './mainMenu.PNG';
+import LookUp from './lookUp.PNG';
+import DrawerNav from './drawerNav.PNG';
+import SignIn from './signIn.PNG';
 
 export {
-  GraphStatic, Graph, Logo, OncMap, Profile, Table, TimeTracker, SignIn
+  PatientStats, CreateAcct, Logo, OncMap, MainMenu, LookUp, DrawerNav, SignIn
 }

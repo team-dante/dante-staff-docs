@@ -71,7 +71,7 @@ const DocumentComponent = (props) => {
       { components.map((component,i) => <DocumentProptypes key={i} component={component} />)}
       <h3 style={{marginTop: '2.6em'}}>App Walkthrough</h3><hr/>
       { examples.map((example,i) => <DocumentExamples key={i} component={example} />)}
-      <h3 style={{marginTop: '2.6em'}}>Patient FAQs</h3><hr/>
+      <h3 style={{marginTop: '2.6em'}}>Staff FAQs</h3><hr/>
       { faqs.map((faq,i) => <DocumentFAQs key={i} component={faq} />)}
     </div>
   );
