@@ -44,7 +44,7 @@ examples.push({
       <ol>
         <li><code>Broadcast My Location</code>: the staff location will be broadcasted to other staff
         inside the clinic; at the same time, only physicians' location will be broadcasted to patients.</li>
-        <li><code>Loop up Patient Account</code>: in case patients forget their accounts</li>
+        <li><code>Look up Patient Account</code>: in case patients forget their accounts</li>
         <li><code>[Deprecated] Scan QR code</code>: the old way to report physicians' locations to patients</li>
         <li><code>Show Patient Statistics</code>: display collected patient stats in graphs</li>
         <li><code>Create Patient Account</code>: staff will create accounts for patients to log in</li>
