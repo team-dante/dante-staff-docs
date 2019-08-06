@@ -107,7 +107,7 @@ examples.push({
 examples.push({
   name: 'View Patient Statistics',
   demo: (
-    <Section imgSrc={PatientStats} imgToRight={false}>
+    <Section imgSrc={PatientStats}>
       <p>Staff will be able to view all the collected patient time tracking statistics. In future,
         our development team will add a filter to display collected data 
         by <code>day, week, month, or year</code>. Collected data can be displayed in a variety of
