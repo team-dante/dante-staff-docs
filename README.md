@@ -1,6 +1,6 @@
 # Dante Staff Documentation
 
-An overview and step-by-step guide for Dante Staff, an iOS mobile application that focuses on internal clinic operations and patient overseeing. Please visit our [Dante-Patient-Staff](https://github.com/team-dante/Dante-Staff-Swift) repo for more details.
+An overview and step-by-step guide for Dante Staff, an iOS mobile application that focuses on internal clinic operations and patient overseeing. Please visit our [Dante-Patient](https://github.com/team-dante/Dante-Staff-Swift) repo for more details.
 
 We will keep this documentation up-to-date to reflect the current app development progress.
 
