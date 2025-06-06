@@ -48,7 +48,7 @@
     "react-router-dom": "^4.0.0",
     "react-scripts": "0.8.5",
     "reactstrap": "^4.0.1",
-    "webpack-dev-server": "^3.7.2"
+    "webpack-dev-server": "^5.2.1"
   },
   "peerDependencies": {
     "reactstrap": "^4.0.0"
